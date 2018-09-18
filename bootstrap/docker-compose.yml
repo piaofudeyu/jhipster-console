@@ -59,7 +59,7 @@ services:
             - ES_PORT=9200
         volumes:
             - ../jhipster-alerter/rules/:/opt/elastalert/rules/
-            - ../alerts/config.yaml:/opt/elastalert/config.yaml
+            - ../jhipster-alerter/config.yaml:/opt/elastalert/config.yaml
 
     jhipster-zipkin:
         image: jhipster/jhipster-zipkin:latest
